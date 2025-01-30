@@ -34,6 +34,24 @@
             font-weight: 100;
             font-style: normal;
         }
+        .none
+        {
+            display: none;
+        }
+        @media screen and (max-width:646px)
+        {
+            .small-device-hide
+            {
+                display: none;
+            }
+        }
+        @media screen and (min-width:646px) and (max-width:768px)
+        {
+            .mid-device-hide
+            {
+                display: none;
+            }
+        }
      </style>
      <!-- tailwindcss script for color -->
     <script>
@@ -42,7 +60,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                // 'bike-primary': '#E76F51',
+                'btn-border': '#179800',
               }
             }
           }
@@ -50,6 +68,58 @@
       </script>
 </head>
 <body class="sora-font">
-    <h3 class="">hello</h3>
+  
+    <div class="navbar bg-base-100 container mx-auto flex justify-between">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 hidden"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <!-- <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                    </ul> -->
+                </div>
+                <div>
+                    <img class="small-device-hide mid-device-hide" src="./c2-assets/logo-header.png" alt="">
+                    <img class="lg:hidden md:hidden" src="./c2-assets/Group.png" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-xl">Product</a></li>
+                <li><a class="text-xl">Services</a></li>
+                <li><a class="text-xl">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end gap-3">
+                <i class="fa-solid fa-magnifying-glass small-device-hide"></i>
+                <i class="fa-solid fa-cart-shopping small-device-hide"></i>
+                <button class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost">Login</button>
+                <button class="bg-[#179800] rounded-md text-white text-xl small-device-hide btn btn-ghost">Register</button>
+                <i class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide"></i>
+            </div>
+    </div>
+
 </body>
 </html>
