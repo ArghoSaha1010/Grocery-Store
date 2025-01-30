@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery Store</title>
     <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- sora font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- popins font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- fontawesome kit link -->
-    <script src="https://kit.fontawesome.com/4d7924498a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4d7924498a.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- custom css -->
-     <style>
-        .sora-font 
-        {
-            font-family: "Sora", serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
+    <style>
+      .sora-font {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .poppins-thin {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      .none {
+        display: none;
+      }
+      @media screen and (max-width: 646px) {
+        .small-device-hide {
+          display: none;
         }
-        .poppins-thin 
-        {
-            font-family: "Poppins", serif;
-            font-weight: 100;
-            font-style: normal;
+      }
+      @media screen and (min-width: 646px) and (max-width: 768px) {
+        .mid-device-hide {
+          display: none;
         }
-        .none
-        {
-            display: none;
-        }
-        @media screen and (max-width:646px)
-        {
-            .small-device-hide
-            {
-                display: none;
-            }
-        }
-        @media screen and (min-width:646px) and (max-width:768px)
-        {
-            .mid-device-hide
-            {
-                display: none;
-            }
-        }
-     </style>
-     <!-- tailwindcss script for color -->
+      }
+    </style>
+    <!-- tailwindcss script for color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'btn-border': '#179800',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body class="sora-font">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-border": "#179800",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="sora-font">
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
-        <!-- navbar section -->
-        <div class="navbar bg-base-100 container mx-auto flex justify-between bg-gradient-to-t from-[#fffdf8] to-[#FFFFFF]">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 hidden"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <!-- <ul
+      <!-- navbar section -->
+      <div
+        class="navbar bg-base-100 container mx-auto flex justify-between bg-gradient-to-t from-[#fffdf8] to-[#FFFFFF]"
+      >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 hidden"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <!-- <ul
                         tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>Item 1</a></li>
@@ -100,47 +110,115 @@
                         </li>
                         <li><a>Item 3</a></li>
                         </ul> -->
-                    </div>
-                    <div>
-                        <img class="small-device-hide mid-device-hide" src="./c2-assets/logo-header.png" alt="">
-                        <img class="lg:hidden md:hidden" src="./c2-assets/Group.png" alt="">
-                    </div>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-xl">Product</a></li>
-                    <li><a class="text-xl">Services</a></li>
-                    <li><a class="text-xl">Contact us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end gap-3">
-                    <i class="fa-solid fa-magnifying-glass small-device-hide"></i>
-                    <i class="fa-solid fa-cart-shopping small-device-hide"></i>
-                    <button class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost">Login</button>
-                    <button class="bg-[#179800] rounded-md text-white text-xl small-device-hide btn btn-ghost">Register</button>
-                    <i class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide text-[#179800]"></i>
-                </div>
-                
+          </div>
+          <div>
+            <img
+              class="small-device-hide mid-device-hide"
+              src="./c2-assets/logo-header.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden md:hidden"
+              src="./c2-assets/Group.png"
+              alt=""
+            />
+          </div>
         </div>
-        <hr style="border: none; height: 1px; background-color: #179800;" class="lg:hidden md:hidden">
-        <!-- banner section -->
-         <section class="flex flex-col mx-auto items-center mt-20">
-            <div class="items-center text-center">
-                <h2 class="font-semibold text-3xl md:text-5xl lg:text-5xl">
-                    <span class="text-[#111111]">Freshness</span> <span class="text-[#179800]">You Can</span> <br>
-                    <span class="text-[#179800]">Count</span> <span class="text-[#111111]">On, Prices You’ll Love!</span>
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
-                </p>
-            </div>
-            <div>
-                <img src="./c2-assets/hero-vegetables.png" alt="">
-            </div>
-         </section>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-xl">Product</a></li>
+            <li><a class="text-xl">Services</a></li>
+            <li><a class="text-xl">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-3">
+          <i class="fa-solid fa-magnifying-glass small-device-hide"></i>
+          <i class="fa-solid fa-cart-shopping small-device-hide"></i>
+          <button
+            class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost"
+          >
+            Login
+          </button>
+          <button
+            class="bg-[#179800] rounded-md text-white text-xl small-device-hide btn btn-ghost"
+          >
+            Register
+          </button>
+          <i
+            class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide text-[#179800]"
+          ></i>
+        </div>
+      </div>
+      <hr
+        style="border: none; height: 1px; background-color: #179800"
+        class="lg:hidden md:hidden"
+      />
+      <!-- banner section -->
+      <section class="flex flex-col mx-auto items-center mt-20">
+        <div class="items-center text-center">
+          <h2 class="font-semibold text-3xl md:text-5xl lg:text-5xl">
+            <span class="text-[#111111]">Freshness</span>
+            <span class="text-[#179800]">You Can</span> <br />
+            <span class="text-[#179800]">Count</span>
+            <span class="text-[#111111]">On, Prices You’ll Love!</span>
+          </h2>
+          <p class="text-xl text-gray-600">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />
+            staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <div>
+          <img src="./c2-assets/hero-vegetables.png" alt="" />
+        </div>
+      </section>
     </header>
     <main>
-        
+      <section class="container mx-auto my-32">
+        <h3 class="font-semibold text-4xl text-[#179800] mb-8 p-5">Services</h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-5">
+            <div class="card bg-base-100 shadow-xl bg-[#EFEBE3]">
+              <div class="flex justify-center items-center">
+                <img class="rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/service.png" alt=""/>
+              </div>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title font-semibold text-2xl">24/7 Services</h2>
+                <p class="text-xl text-gray-600">
+                    Our grocery shop offers 24/7 services, ensuring fresh produce, snacks and household essentials anytime.
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl bg-[#EFEBE3]">
+                <div class="flex justify-center items-center">
+                  <img class="rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/service.png" alt=""/>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-semibold text-2xl">24/7 Services</h2>
+                  <p class="text-xl text-gray-600">
+                      Our grocery shop offers 24/7 services, ensuring fresh produce, snacks and household essentials anytime.
+                  </p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl bg-[#EFEBE3]">
+                <div class="flex justify-center items-center">
+                  <img class="rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/service.png" alt=""/>
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-semibold text-2xl">24/7 Services</h2>
+                  <p class="text-xl text-gray-600">
+                      Our grocery shop offers 24/7 services, ensuring fresh produce, snacks and household essentials anytime.
+                  </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div></div>
+        <div></div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
