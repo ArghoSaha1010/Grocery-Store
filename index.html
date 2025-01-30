@@ -68,58 +68,79 @@
       </script>
 </head>
 <body class="sora-font">
-  
-    <div class="navbar bg-base-100 container mx-auto flex justify-between">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 hidden"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+        <!-- navbar section -->
+        <div class="navbar bg-base-100 container mx-auto flex justify-between bg-gradient-to-t from-[#fffdf8] to-[#FFFFFF]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 hidden"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <!-- <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                        </ul> -->
                     </div>
-                    <!-- <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                    </ul> -->
+                    <div>
+                        <img class="small-device-hide mid-device-hide" src="./c2-assets/logo-header.png" alt="">
+                        <img class="lg:hidden md:hidden" src="./c2-assets/Group.png" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img class="small-device-hide mid-device-hide" src="./c2-assets/logo-header.png" alt="">
-                    <img class="lg:hidden md:hidden" src="./c2-assets/Group.png" alt="">
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-xl">Product</a></li>
+                    <li><a class="text-xl">Services</a></li>
+                    <li><a class="text-xl">Contact us</a></li>
+                  </ul>
                 </div>
+                <div class="navbar-end gap-3">
+                    <i class="fa-solid fa-magnifying-glass small-device-hide"></i>
+                    <i class="fa-solid fa-cart-shopping small-device-hide"></i>
+                    <button class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost">Login</button>
+                    <button class="bg-[#179800] rounded-md text-white text-xl small-device-hide btn btn-ghost">Register</button>
+                    <i class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide text-[#179800]"></i>
+                </div>
+                
+        </div>
+        <hr style="border: none; height: 1px; background-color: #179800;" class="lg:hidden md:hidden">
+        <!-- banner section -->
+         <section class="flex flex-col mx-auto items-center mt-20">
+            <div class="items-center text-center">
+                <h2 class="font-semibold text-3xl md:text-5xl lg:text-5xl">
+                    <span class="text-[#111111]">Freshness</span> <span class="text-[#179800]">You Can</span> <br>
+                    <span class="text-[#179800]">Count</span> <span class="text-[#111111]">On, Prices You’ll Love!</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+                </p>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-xl">Product</a></li>
-                <li><a class="text-xl">Services</a></li>
-                <li><a class="text-xl">Contact us</a></li>
-              </ul>
+            <div>
+                <img src="./c2-assets/hero-vegetables.png" alt="">
             </div>
-            <div class="navbar-end gap-3">
-                <i class="fa-solid fa-magnifying-glass small-device-hide"></i>
-                <i class="fa-solid fa-cart-shopping small-device-hide"></i>
-                <button class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost">Login</button>
-                <button class="bg-[#179800] rounded-md text-white text-xl small-device-hide btn btn-ghost">Register</button>
-                <i class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide"></i>
-            </div>
-    </div>
-
+         </section>
+    </header>
+    <main>
+        
+    </main>
 </body>
 </html>
