@@ -82,41 +82,26 @@
   <body class="sora-font">
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
       <!-- navbar section -->
-      <div
-        class="navbar bg-base-100 container mx-auto flex justify-between bg-gradient-to-t from-[#fffdf8] to-[#FFFFFF]"
-      >
+      <div class="navbar bg-base-100 container mx-auto flex justify-between bg-gradient-to-t from-[#fffdf8] to-[#FFFFFF]">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 hidden"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 hidden"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                        />
+                    </svg>
+                </div>
             </div>
-            <!-- <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                        </ul> -->
-          </div>
           <div>
             <img
               class="small-device-hide mid-device-hide"
@@ -140,25 +125,18 @@
         <div class="navbar-end gap-3">
           <i class="fa-solid fa-magnifying-glass small-device-hide"></i>
           <i class="fa-solid fa-cart-shopping small-device-hide"></i>
-          <button
-            class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost"
-          >
-            Login
-          </button>
+          <button class="btn border border-[#179800] rounded-md text-xl small-device-hide btn-ghost">Login</button>
           <button
             class="bg-[#179800] rounded-md text-white text-xl small-device-hide btn btn-ghost"
           >
             Register
           </button>
-          <i
-            class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide text-[#179800]"
-          ></i>
+          <i class="fa-solid fa-bars w-5 h-5 lg:hidden md:hidden mid-device-hide text-[#179800] pr-10"></i>
         </div>
       </div>
-      <hr
-        style="border: none; height: 1px; background-color: #179800"
-        class="lg:hidden md:hidden"
-      />
+
+      <hr style="border: none; height: 1px; background-color: #179800"class="lg:hidden md:hidden"/>
+      
       <!-- banner section -->
       <section class="flex flex-col mx-auto items-center mt-20">
         <div class="items-center text-center">
@@ -166,7 +144,7 @@
             <span class="text-[#111111]">Freshness</span>
             <span class="text-[#179800]">You Can</span> <br />
             <span class="text-[#179800]">Count</span>
-            <span class="text-[#111111]">On, Prices You’ll Love!</span>
+            <span class="text-[#111111]">On, Prices You’ll Love <span class="motion-safe:animate-spin inline-block">!</span></span>
           </h2>
           <p class="text-xl text-gray-600">
             Shop your daily essentials at unbeatable prices. From fresh produce
@@ -187,7 +165,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 p-5">
                 <div class="card bg-base-100 shadow-xl bg-[#EFEBE3]">
                 <div class="flex justify-center items-center">
-                    <img class="rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/service.png" alt=""/>
+                    <img class="hover:animate-spin rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/service.png" alt=""/>
                 </div>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title font-semibold text-2xl">24/7 Services</h2>
@@ -199,7 +177,7 @@
 
                 <div class="card bg-base-100 shadow-xl bg-[#EFEBE3]">
                     <div class="flex justify-center items-center">
-                    <img class="rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/delivery.png" alt=""/>
+                    <img class="hover:animate-spin rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/delivery.png" alt=""/>
                     </div>
                     <div class="card-body items-center text-center">
                     <h2 class="card-title font-semibold text-2xl">Fast Delivery</h2>
@@ -211,7 +189,7 @@
 
                 <div class="card bg-base-100 shadow-xl bg-[#EFEBE3]">
                     <div class="flex justify-center items-center">
-                    <img class="rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/healthy.png" alt=""/>
+                    <img class="hover:animate-spin rounded-full mx-auto p-2 bg-white mt-7" src="./c2-assets/healthy.png" alt=""/>
                     </div>
                     <div class="card-body items-center text-center">
                     <h2 class="card-title font-semibold text-2xl">Healthy Products</h2>
@@ -228,7 +206,7 @@
         </section>
 
                 <!-- popular product -->
-        <section class="my-14 space-y-5 bg-[#EFEBE3] py-20 ">
+        <section class="my-14 space-y-5 bg-[#EFEBE3] py-20">
             <h1 class="container mx-auto text-3xl font-bold text-green-600 px-5">Popular Products</h1>
             <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 lg:gap-6 space-y-2 justify-center items-center px-5">
                 <!-- image card section -->
@@ -237,7 +215,7 @@
                     <div class="relative space-y-3">
                         <h1 class="font-bold text-2xl text-white ">30% off</h1>
                         <p class="w-9/12">Discover a world of treats ,toy and essential handpicked for </p>
-                        <button class="w-24 h-10 bg-white rounded-lg border-none">Buy Now</button>
+                        <button class="w-24 h-10 bg-white rounded-lg border-none ">Buy Now</button>
                     </div>
                     <div class=" absolute bottom-0  right-1  w-36 md:w-48 lg:w-60 ">
                         <img class="lg:w-10/12 h-full w-11/12" src="./c2-assets/vegetable-offer.png" alt="">
@@ -256,7 +234,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -274,7 +252,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -292,7 +270,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -310,7 +288,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -328,7 +306,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -346,7 +324,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -364,7 +342,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -382,7 +360,7 @@
                          <div class="flex items-center">
                             <div >
                                 <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -391,7 +369,8 @@
                          </div>
                   </div>
                    <!-- card 9 -->
-                    <div class="p-2 flex gap-3 bg-white rounded-lg flex-1 small-device-hide mid-device-hide">
+                    <!-- p-2 flex gap-3 bg-white rounded-lg flex-1 small-device-hide md:hidden sm:block lg:block  -->
+                    <div class="p-2 flex gap-3 bg-white rounded-lg small-device-hide">
                          <!-- vegetable image -->
                           <div class="rounded-xl">
                             <img src="./c2-assets/tomato.png" alt="">
@@ -399,8 +378,8 @@
                          <!-- vegetable content -->
                          <div class="lg:flex lg:items-center">
                             <div >
-                                <div class="flex gap-2 items-center">
-                                    <i class="fa-solid fa-star text-[#FFC107]"></i>
+                                <div class="flex gap-x-2 items-center">
+                                    <i class="fa-solid fa-star text-[#FFC107] animate-pulse"></i>
                                     <h2>4.5</h2>
                                 </div>
                                 <h2 class="text-black font-semibold ">Onion 1 KG</h2>
@@ -415,16 +394,16 @@
 
     
                     <!-- Arrival & offers -->
-        <section class="flex flex-col container mx-auto mt-32 mb-96">
+        <section class="flex flex-col container mx-auto mt-32 mb-96 p-2">
                 <h1 class="text-[#179800] font-semibold text-4xl mb-12">Arrival & offers</h1>
-                <div class="flex sm:flex-col lg:flex-row md:flex-row justify-center items-center gap-3 container mx-auto">
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-3 container mx-auto">
                         <!-- Daawat the finest -->
-                    <div class="bg-[#115414] flex pt-5 lg:w-7/12 justify-between rounded-3xl py-1">
+                    <div class="bg-[#115414] flex pt-5 lg:w-7/12 w-full justify-between items-center rounded-3xl py-1">
                         <!-- text content  -->
                         <div class="flex flex-col p-10">
-                            <img src="./c2-assets/dawat-logo.png" alt="">
-                            <h1 class="px-10 py-4 bg-[#63B76D] text-white rounded-xl my-7">Cook Exotic Dishes</h1>
-                            <h1><span class="poppins-thin text-4xl text-white">UP TO </span><span class="poppins-thin text-4xl text-white font-semibold">20% OFF</span></h1>
+                            <img class="animate-bounce"  src="./c2-assets/dawat-logo.png" alt="">
+                            <h1 class="px-10 py-4 bg-[#63B76D] text-white rounded-xl my-7 animate-bounce">Cook Exotic Dishes</h1>
+                            <h1><span class="poppins-thin text-4xl text-white">UP TO </span><span class="poppins-thin text-4xl text-white font-semibold animate-pulse">20% OFF</span></h1>
                         </div>
 
                         <div>
@@ -432,12 +411,12 @@
                         </div>
                     </div>
                     <!-- india gate -->
-                    <div class="flex bg-[#102861] lg:w-5/12 container pt-11 px-5 justify-between rounded-3xl">
+                    <div class="flex bg-[#102861] p-5 container xl:h-auto lg:h-96 lg:w-5/12 md:px-5 md:pt-11 md:w-12/12 lg:pt-7 lg:px-5 lg:pb-5 justify-between rounded-3xl">
                         <!-- text content  -->
                         <div class="flex flex-col">
-                            <img class="w-4/12" src="./c2-assets/india-gate-logo.png" alt="">
-                            <h1 class="px-10 py-4 bg-[#2A4D97] text-white rounded-xl my-7">World's No.1 Rice</h1>
-                            <h1><span class="poppins-thin text-4xl text-white">UP TO </span><span class="poppins-thin text-4xl text-white font-semibold">40% OFF</span></h1>
+                            <img class="w-4/12 animate-bounce" src="./c2-assets/india-gate-logo.png" alt="">
+                            <h1 class="px-10 py-4 bg-[#2A4D97] text-white rounded-xl my-7 animate-bounce">World's No.1 Rice</h1>
+                            <h1><span class="poppins-thin text-4xl text-white">UP TO </span><span class="poppins-thin text-4xl text-white font-semibold animate-pulse">40% OFF</span></h1>
                         </div>
 
                         <div>
@@ -451,43 +430,43 @@
         
         <div class="relative">
             <!-- footer er opoer card -->
-            <div class="bg-[#EFEBE3] flex items-center justify-evenly container mx-auto py-12 rounded-3xl absolute -top-56 left-44">
+                <div class="bg-[#EFEBE3] gap-y-5 w-10/12 flex flex-col lg:flex-row items-center justify-around px-5 lg:px-12 py-5 lg:py-12 rounded-3xl absolute left-1/2 transform -translate-x-1/2 -top-72 lg:-top-52">
                 <!-- card er img -->
                 <div>
                     <img src="./c2-assets/vegetable-busket.png" alt="">
                 </div>
                 <!-- content part -->
-                 <div>
+                 <div class="text-center lg:text-start">
                     <h1 class="font-semibold text-4xl">Get Grocery News!</h1>
-                    <p class="text-xl py-6">
+                    <p class="text-xl lg:py-6">
                     Exclusive training tips, ticks, product deals and more.
                     </p>
-                    <div class="pb-6">
+                    <div class="pb-2">
                         <input class="bg-white rounded-lg pl-5 w-10/12 my-4 py-4" type="email" placeholder="Enter email">
                     </div>
                     <button class="btn bg-[#179800] text-[#EFEBE3] text-xl px-7 py-3 border-none">Subscribe</button>
                  </div>
             </div>
 
-            <footer class="bg-[#179800]">
+            <footer class="bg-[#179800] pt-24 lg:py-0">
                     <!-- green part ta -->
-                <div class="container mx-auto flex justify-between items-center pb-32 pt-80">
+                <div class="w-10/12 mx-auto flex flex-col space-y-5 lg:flex-row lg:justify-between lg:items-center pb-32 pt-80 pl-5 lg:pl-0">
                     <!-- part-1 -->
-                     <div class="w-5/12 border border-red-600">
+                     <div class="lg:w-5/12 ">
                         <img src="./c2-assets/logo-footer.png" alt="">
                         <p class="text-[#EFEBE3] text-xl">
-                            Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends
+                            Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends.
                         </p>
                      </div>
                      <!-- part-2 -->
-                      <div class="space-y-4 w-4/12 border border-red-600 flex flex-col gap-4">
+                      <div class="space-y-4 w-4/12 flex flex-col gap-4">
                         <li class="list-none"><a class="text-[#EFEBE3] text-xl" href="">Product</a></li>
                         <li class="list-none"><a class="text-[#EFEBE3] text-xl" href="">Services</a></li>
                         <li class="list-none"><a class="text-[#EFEBE3] text-xl" href="">Contact us</a></li>
                       </div>
                      <!-- part-3 -->
-                      <div class="w-3/12 border border-red-600 flex flex-col mt-auto p-5 space-y-2">
-                        <p class="text-[#EFEBE3]">Follow Us</p>
+                      <div class="w-3/12 flex flex-col mt-auto space-y-2">
+                        <p class="text-[#EFEBE3] animate-pulse">Follow Us</p>
                         <div class="flex gap-5">
                             <a href=""><i class="fa-brands fa-facebook rounded-full text-[#EFEBE3]"></i></a>
                             <a href=""><i class="fa-brands fa-instagram rounded-full text-[#EFEBE3]"></i></a>
