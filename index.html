@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery Store</title>
+    <!-- favicon -->
+     <link rel="shortcut icon" href="./c2-assets/Group.png" type="image/x-icon">
     <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI link -->
@@ -157,6 +159,9 @@
         </div>
       </section>
     </header>
+
+    
+
     <main>
             <!-- service section -->
         <section class="container mx-auto my-32">
@@ -431,7 +436,7 @@
                     <dialog id="my_modal_1" class="modal">
                     <div class="modal-box">
                         <h3 class="text-lg font-bold">Hello! <br> Wellcome to our shop!</h3>
-                        <p class="py-4">Here is your cuppon code "<span title="Copy this" class="text-xl">180500</span>"<br> Have a good day sir...</p>
+                        <p class="py-4">Here is your cuppon code "<span title="Copy me" class="text-xl">180500</span>"<br> Have a good day sir...</p>
                         <div class="modal-action">
                         <form method="dialog">
                             <!-- if there is a button in form, it will close the modal -->
@@ -454,17 +459,19 @@
                     <img src="./c2-assets/vegetable-busket.png" alt="">
                 </div>
                 <!-- content part -->
-                 <div class="text-center lg:text-start">
-                    <h1 class="font-semibold text-4xl">Get Grocery News!</h1>
-                    <p class="text-xl lg:py-6">
-                    Exclusive training tips, ticks, product deals and more.
-                    </p>
-                    <div class="pb-2">
-                        <input class="bg-white rounded-lg pl-5 w-10/12 my-4 py-4" type="email" placeholder="Enter email">
+                    <div class="text-center lg:text-start">
+                        <form action="">
+                            <h1 class="font-semibold text-4xl">Get Grocery News!</h1>
+                            <p class="text-xl lg:py-6">
+                            Exclusive training tips, ticks, product deals and more.
+                            </p>
+                            <div class="pb-2">
+                                <input class="bg-white rounded-lg pl-5 w-10/12 my-4 py-4" type="email" placeholder="Enter email..." required>
+                            </div>
+                            <submit class="btn bg-[#179800] text-[#EFEBE3] text-xl px-7 py-3 border-none hover:bg-[#123524]">Subscribe</submit>
+                        </form>
                     </div>
-                    <button class="btn bg-[#179800] text-[#EFEBE3] text-xl px-7 py-3 border-none">Subscribe</button>
-                 </div>
-            </div>
+                </div>
 
             <footer class="bg-[#179800] pt-24 lg:py-0">
                     <!-- green part ta -->
@@ -493,7 +500,28 @@
                         </div>
                       </div>
                 </div>
+                <!-- extra section -->
+                <div class="drawer flex items-center justify-center pb-11 order-5">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                      <!-- Page content here -->
+                      <label for="my-drawer" class="btn  drawer-button bg-[#123524] text-[#EFE3C2] border-none hover:bg-[#86A788] hover:text-[#123524]" title="you can visit our braches by Click me!">You can visit Our Branches</label>
+                    </div>
+                    <div class="drawer-side">
+                      <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                      <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                        <!-- Sidebar content here -->
+                        <li><a title="Please pay visit to our Dhanmodi branch sir..">Dhanmodi</a></li>
+                        <li><a title="Please pay visit to our Boshundhora branch sir..">Boshundhora</a></li>
+                        <li><a title="Please pay visit to our Mymenshing branch sir..">Mymenshing</a></li>
+                        <li><a title="Please pay visit to our Cumilla branch sir..">Cumilla</a></li>
+                        <li><a title="Please pay visit to our Sylhet branch sir..">Sylhet</a></li>
+                        <li><a title="Please pay visit to our Rajshahi branch sir..">Rajshahi</a></li>
+                      </ul>
+                    </div>
+                  </div>
             </footer>
+            
         </div>
     
     </main>
