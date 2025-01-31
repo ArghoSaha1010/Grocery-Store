@@ -425,6 +425,24 @@
                     </div>
 
                 </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <span class="mt-24 flex justify-center items-center ">
+                    <button class="btn  bg-[#727D73] text-[#212121] hover:animate-pulse shadow-black" onclick="my_modal_1.showModal()">Get Cuppon Code</button>
+                    <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Hello! <br> Wellcome to our shop!</h3>
+                        <p class="py-4">Here is your cuppon code "<span title="Copy this" class="text-xl">180500</span>"<br> Have a good day sir...</p>
+                        <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <div>
+                                <button class="btn ">Bye!</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    </dialog>
+                </span>
         </section>
 
         
